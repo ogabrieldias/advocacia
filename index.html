@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Paralax Effect On GSAP</title>
+	<link rel="icon" href="img/icon.jpg" type="icon/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<!-- swiper css -->
+	<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+	<section id="home">
+		
+		<header class="header__navegation"> <!-- Class Design header -->
+			
+			<a href="#home"  class="logo_img_header">
+				<img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/Logo-Top-e1723023667984-1024x305.png" class="logo_img_header" alt="">
+			</a> <!-- Class logo | /logo -->
+			<nav class="navbar"> <!-- Class navbar -->
+				
+				<nav class="container_appear_on_mobile">
+					<a href="#home" class="active navbar_active">Home</a> <!-- ID home | /home & Class active -->
+					<a href="#about" class="navbar_active">About</a> <!-- ID About -->
+					
+					<a href="#benefits" class="navbar_active">Benefits</a> <!-- ID portfolio -->
+					<a href="#portfolio" class="navbar_active">Portfolio</a> <!-- ID contato -->
+					<a href="#testimonial" class="navbar_active">Testimonial</a> <!-- ID testimonial -->
+					<a href="#services" class="navbar_active">Contact-me</a> <!-- ID contato -->
+				
+				
+					<a href="#home" class="active hideOnMobile" >Home</a> <!-- ID home | /home & Class active -->
+					<a href="#about" class="hideOnMobile">About</a> <!-- ID About -->
+					
+					<a href="#benefits" class="hideOnMobile">Benefits</a> <!-- ID portfolio -->
+					<a href="#portfolio" class="hideOnMobile">Portfolio</a> <!-- ID contato -->
+					<a href="#testimonial" class="hideOnMobile">Testimonial</a> <!-- ID testimonial -->
+					<a href="#services" class="hideOnMobile">Contact-me</a> <!-- ID contato -->
+
+				</nav>
+
+
+
+				
+			</nav> <!-- /navbar-->
+			
+			<div class="bx bx-moon" id="darkMode-icon"></div>
+
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</header>
+
+		
+
+
+		<!-- div .header -->
+		<header class="main__header" id="home">
+			
+
+
+
+
+			<h1 class="title" data-splitting><span class="title_paralax">Alpha Jurídico</span>
+				<span class="stroke">
+				a liderança que você precisa para enfrentar seus desafios <br>com confiança.</span></h1>
+			<div class="header__img">
+				<img src="https://wordpress-cms-gc-prod-assets.quero.space/uploads/2019/01/vista-de-escalas-3d-de-justica-para-o-dia-do-advogado-1-scaled.jpg" alt="1">
+			</div>
+			<div class="header__marq">
+				<div class="header__marq-wrapp">
+					
+					<span class="header__marq-txt">Alpha Jurídico
+						<span class="header__marq-star">
+							<img src="https://i.pinimg.com/originals/7f/94/e4/7f94e459d33209c5fbffabf4b3e089d9.png" alt="">
+						</span>
+					</span>
+					<span class="header__marq-txt">Alpha Jurídico
+						<span class="header__marq-star">
+							<img src="https://i.pinimg.com/originals/7f/94/e4/7f94e459d33209c5fbffabf4b3e089d9.png" alt="">
+						</span>
+					</span>
+					<span class="header__marq-txt">Alpha Jurídico
+						<span class="header__marq-star">
+							<img src="https://i.pinimg.com/originals/7f/94/e4/7f94e459d33209c5fbffabf4b3e089d9.png" alt="">
+						</span>
+					</span>
+					<span class="header__marq-txt">Alpha Jurídico
+						<span class="header__marq-star">
+							<img src="https://i.pinimg.com/originals/7f/94/e4/7f94e459d33209c5fbffabf4b3e089d9.png" alt="">
+						</span>
+						
+					</span>
+				</div>
+			</div>
+		</header>
+	</section>
+
+		
+		<main class="main" class="luxy-el">
+
+			<!-- div .about -->
+			<section class="about" id="about">
+				<div class="about__wrapp">
+					<div class="about__img">
+						<img src="https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/65f541e5480dcc7bba708ea275011b57" alt="2">
+					</div>
+					<div class="about__txt">
+						<h2 class="section-title">abo<span class="stroke">ut</span>
+							
+							<span class="section-title__square" id="square_about"></span>
+						</h2>
+						<p class="about__p">Criamos um site profissional e moderno, com imagens que refletem a seriedade do universo jurídico. Ideal para advogados e instituições do direito, nossa plataforma oferece design impactante e experiência intuitiva. Em breve, disponível para aquisição.
+							</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="benefits" id="about_us">
+				<div class="content">
+					<h2 class="section-title">About<span class="stroke"> us</span>
+						<span class="section-title__square"></span>
+					</h2>
+
+					<ul class="benefits__list" id="about__list">
+						<li class="benefits__item">
+							<span class="benefits__num about__num__historia"  
+							id="about__num"   
+							data-speed="120">História</span> <!-- Proteção Legal -->
+							<p class="benefits__p">Fundado por dois amigos de faculdade apaixonados pelo Direito, o Alpha Jurídico nasceu com o propósito de oferecer um atendimento humano e personalizado. Desde então, já ajudamos mais de 500 clientes a resolverem conflitos de forma justa.
+							</p>
+						</li>
+						<li class="benefits__item">
+							<span class="benefits__num  about__num__equipe_juridica" id="about__num"
+							
+							data-speed="-150">Equipe Jurídica</span> <!-- Segurança Jurídica -->
+							<p class="benefits__p">Carlos, especialista em Direito Penal, sempre diz: “Um caso bem defendido pode mudar uma vida.” Já Ana, mestre em Direito Civil, combina empatia e estratégia para resolver os conflitos mais desafiadores.
+							</p>
+						</li>
+						
+						<span class="benefits__num about__num__areas__atuacao" 
+						id="about__num"
+						data-speed="-200">Áreas de Atuação</span>
+
+
+						<div class="container">
+							<div class="menu">
+								<div class="menu-item" data-target="familia">
+									Família <span>&#9654;</span>
+								</div>
+								<div class="menu-item" data-target="sucessoes">
+									Sucessões <span>&#9654;</span>
+								</div>
+								<div class="menu-item" data-target="trabalhista">
+									Trabalhista <span>&#9654;</span>
+								</div>
+								<div class="menu-item" data-target="empresarial">
+									Empresarial <span>&#9654;</span>
+								</div>
+								<div class="menu-item" data-target="imobiliario">
+									Imobiliário <span>&#9654;</span>
+								</div>
+							</div>
+							<div class="content_actuation_area">
+								<h1 id="title_about_actuation">Família ▼</h1>
+								<p id="familia" class="active">Acreditamos que a verdadeira transformação no direito de família vem de estratégias inovadoras e soluções personalizadas. Nosso escritório trabalha com atendimento humanizado e escuta ativa para entender profundamente cada caso familiar, oferecendo soluções jurídicas que vão além de resolver problemas imediatos solucionando as raizes das demandas judiciais.
+
+								Focamos em resultados duradouros que promovem paz e estabilidade, garantindo que nossos clientes enfrentem desafios familiares com confiança e segurança. Seja qual for o seu caso de direito de família, estamos aqui para construir um futuro mais harmonioso e estável.</p>
+
+								<p id="sucessoes">Compreendemos a importância de um planejamento cuidadoso e estratégico quando se trata de sucessões. Nosso escritório se dedica a oferecer soluções personalizadas que respeitam os desejos do falecido e promovem harmonia entre os herdeiros.
+								Analisamos cada detalhe do processo de sucessão, assegurando que todos os aspectos legais sejam abordados com precisão. Nosso objetivo é proporcionar tranquilidade aos nossos clientes, garantindo que a transição de bens e responsabilidades ocorra de forma suave e transparente. Estamos aqui para ajudar você a enfrentar os desafios sucessórios com confiança, permitindo que um legado de paz e estabilidade seja deixado para as futuras gerações.</p>
+
+								<p id="trabalhista">No direito trabalhista, nosso objetivo é resolver conflitos e promover um ambiente de trabalho equilibrado, focando na resolução de disputas e na construção de relações laborais saudáveis.
+								Com nossa estratégia, você pode contar com um suporte jurídico que combina agilidade e segurança
+								</p>
+
+								<p id="empresarial">Através da nossa consultoria empresarial conseguimos transformar os seus desafios em vantagens estratégicas para sua empresa. Nossa abordagem inovadora e nosso uso de teses estratégicas garantem que sua empresa receba soluções jurídicas sob medida, que não apenas resolvem problemas, mas impulsionam seu sucesso.
+								Desde a fundação até a expansão, e até mesmo na resolução de disputas, oferecemos um suporte jurídico que vai além do convencional. Estamos comprometidos em proteger seus interesses e abrir portas para novas oportunidades, permitindo que você se concentre no crescimento e na inovação do seu negócio com total confiança. Com nossa expertise, você transforma riscos em oportunidades e conduz sua empresa ao próximo nível.</p>
+
+								<p id="imobiliario">Nosso objetivo é fornecer soluções jurídicas que não apenas protejam seus investimentos, mas também potencializem suas oportunidades no mercado imobiliário. Com nossa orientação, você enfrenta desafios imobiliários com segurança, sabendo que está em boas mãos.
+
+									Conte conosco para transformar seus planos imobiliários em realidade e garantir que cada passo seja seguro e bem-sucedido.</p>
+
+								<div class="button-container">
+									<a href="https://wa.me/5551989148525?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20falar%20com%20um%20advogado%20de%20fam%C3%ADlia!" target="_blank" class="button button1 button_about">Fale com um advogado</a>
+								</div>
+							</div>
+						</div>
+
+
+
+					</ul>
+				</div>
+			</section>
+
+
+
+
+
+
+
+			<!-- div .benefits -->
+			<section class="benefits" id="benefits">
+				<div class="content">
+					<h2 class="section-title">benef<span class="stroke">its</span>
+						<span class="section-title__square"></span>
+					</h2>
+
+					<ul class="benefits__list " id="num__benefits__list">
+						<li class="benefits__item">
+							<span class="benefits__num benefits__list__01"  
+							id="num__benefits"
+							data-speed="-150">/01</span> <!-- Proteção Legal -->
+							<p class="benefits__p">Garantia de defesa dos seus direitos e interesses, seja em litígios ou consultorias jurídicas.
+							</p>
+						</li>
+						
+						<li class="benefits__item">
+							<span class="benefits__num 
+							benefits__list__02" id="num__benefits" data-speed="100">/02</span> <!-- Segurança Jurídica -->
+							<p class="benefits__p">Acompanhamento especializado para assegurar que todas as ações estejam em conformidade com a legislação vigente.
+							</p>
+						</li>
+						<li class="benefits__item">
+							<span class="benefits__num benefits__list__03" id="num__benefits" data-speed="-100">/03</span> <!-- Redução de Riscos -->
+							<p class="benefits__p">Minimização de riscos legais por meio de planejamento e estratégias jurídicas adequadas.
+							</p>
+						</li>
+						<li class="benefits__item">
+							<span class="benefits__num benefits__list__04" id="num__benefits" 
+							data-speed="100">/04</span> <!-- Consultoria Preventiva -->
+							<p class="benefits__p">Orientação jurídica para evitar problemas futuros, reduzindo a necessidade de litígios.
+							</p>
+						</li>
+						<li class="benefits__item">
+							<span class="benefits__num benefits__list__05" id="num__benefits" 
+							data-speed="-500">/05</span> <!-- Defesa de Direitos -->
+							<p class="benefits__p">Proteção dos direitos fundamentais de indivíduos e empresas em casos de disputas judiciais.
+							</p>
+						</li>
+						<li class="benefits__item">
+							<span class="benefits__num benefits__list__06" id="num__benefits" 
+							data-speed="100">/06</span> <!-- Resolução de Conflitos -->
+							<p class="benefits__p">Mediação e conciliação para solucionar disputas de forma mais amigável e menos onerosa que o processo judicial tradicional.
+							</p>
+						</li>
+						
+					</ul>
+				</div>
+			</section>
+
+			<!-- div .work -->
+			<section class="work" id="portfolio">
+				<div class="content">
+					<h2 class="section-title">Míd<span class="stroke">ia</span>
+						<span class="section-title__square"></span>
+					</h2>
+				</div>
+				<div class="height_work">
+					<div class="work__wrapp">
+						<div class="work__item" data-speed="-300">
+							<span class="work__item-num" id="work_item-num_001"
+							data-speed="-100">/001</span>
+							<div class="work__item-img">
+								<img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/3.png" alt="1">
+							</div>
+							<p class="description_portfolio">Mulheres do Brasil</p>
+						</div>
+						<div class="work__item" data-speed="-600">
+							<span class="work__item-num"  id="work_item-num_002" data-speed="-50">/002</span>
+							<div class="work__item-img">
+								<img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/4.png" alt="2">
+							</div>
+							<p class="description_portfolio">Bendita TV</p>
+						</div>
+						<div class="work__item" data-speed="-700">
+							<span class="work__item-num" data-speed="-120">/003</span>
+							<div class="work__item-img">
+								<img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/5.png" alt="3">
+							</div>
+							<p class="description_portfolio">Escritório de Canela</p>
+						</div>
+						<!-- Next work -->
+					</div>
+				</div>
+			</section>
+
+
+			<!-- div .blog -->
+			<section class="testimonial" id="testimonial">
+				<div class="content">
+					<h2 class="section-title">Testimo<span class="stroke">nial</span>
+						<span class="section-title__square"></span>
+					</h2>
+
+
+
+
+					<h2 id="title_counter">Clientes que confiam</h2>
+					<div class="counter-section" id="counters">
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="3000">0</span>
+							</div>
+							<div class="description">Processos Realizados</div>
+						</div>
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="45000">0</span>
+							</div>
+							<div class="description">Clientes <br>Atendidos</div>
+						</div>
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="40">0</span>
+							</div>
+							<div class="description">Cidades Atendidas</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="counter-section_mobile counter-section_none" id="counter">
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="3000">0</span>
+							</div>
+							<div class="description">Processos Realizados</div>
+						</div>
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="45000">0</span>
+							</div>
+							<div class="description">Clientes <br>Atendidos</div>
+						</div>
+						<div class="counter-container">
+							<div class="counter-wrapper">
+								<span class="counter-symbol">+</span>
+								<span class="counter" data-target="40">0</span>
+							</div>
+							<div class="description">Cidades Atendidas</div>
+						</div>
+					</div>
+
+
+
+
+
+
+					<div class="testimonial-container"> <!-- Class testimonial-container -->
+						<div class="testimonial-wrapper"> <!-- Class testimonial-wraper -->
+							<div class="testimonial-box mySwiper"> <!-- Class testimonial-box | Class mySwiper -->
+								<div class="testimonial-content swiper-wrapper"> <!-- Class testimonial-content | Class swiper-wrapper -->
+									<div class="testimonial-slide swiper-slide"> <!-- Class testimonial-slide | Class swiper-slide -->
+										<img src="https://cdn3d.iconscout.com/3d/premium/thumb/homem-de-cabelo-curto-com-barba-6528390-5823071.png" alt="">
+										<h3>Carlos Silva</h3>
+										<p>Excelente profissional! Sempre ágil e eficiente, resolveu todos os problemas técnicos rapidamente, garantindo o bom funcionamento dos sistemas. Recomendo totalmente!</p>
+									</div> <!-- Class /testimonial-slide | Class /swiper-slide -->
+				
+									<div class="testimonial-slide swiper-slide"> <!-- Class testimonial-slide | Class swiper-slide -->
+										<img src="https://cdn.icon-icons.com/icons2/3545/PNG/512/female_accounts_avatars_hair_long_earrings_necklace_geek_nerd_glasses_woman_icon_224666.png" alt="">
+										<h3>Ana Pereira</h3>
+										<p>Trabalhei com ele em diversas funções logísticas e sempre demonstrou organização e comprometimento. Suas soluções foram fundamentais para a eficiência das operações.</p>
+									</div> <!-- Class /testimonial-slide | Class /swiper-slide -->
+				
+									<div class="testimonial-slide swiper-slide"> <!-- Class testimonial-slide | Class swiper-slide -->
+										<img src="https://cdn3d.iconscout.com/3d/premium/thumb/avatar-homem-de-oculos-10253511-8330266.png" alt="">
+										<h3>Marcos Oliveira</h3>
+										<p>Um assistente administrativo incrível! Sempre atencioso e proativo, ajudou a manter tudo em ordem e colaborou para o bom andamento das tarefas diárias.</p>
+									</div> <!-- Class /testimonial-slide | Class /swiper-slide -->
+				
+									<div class="testimonial-slide swiper-slide"> <!-- Class testimonial-slide | Class swiper-slide -->
+										<img src="https://cdn3d.iconscout.com/3d/premium/thumb/avatar-homem-de-chapeu-10253512-8330267.png" alt="">
+										<h3>Roberto Souza</h3>
+										<p>Profissional versátil e dedicado! Seja no suporte técnico, logística ou administração, ele sempre entregou resultados de alta qualidade. Uma pessoa confiável e muito capacitada.</p>
+									</div> <!-- Class /testimonial-slide | Class /swiper-slide -->
+				
+								</div> <!-- Class /testimonial-content | Class /swiper-wrapper -->
+								<div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-pagination"></div>
+							</div> <!-- Class /testimonial-box | /Class mySwiper -->
+						</div> <!-- Class /testimonial-wraper -->
+					</div> <!-- Class /testimonial-container -->
+			</section>
+			
+	
+
+			
+
+
+
+
+
+
+			<!-- div .serv -->
+			<section class="serv" id="services">
+				<div class="content">
+					<h2 class="section-title">Contact<span class="stroke">-me</span>
+						<span class="section-title__square"></span>
+					</h2>
+
+					<div class="serv__list">
+						<div class="serv__item">
+							<a href="https://wa.me/5524998558044?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20falar%20com%20um%20advogado%20de%20fam%C3%ADlia!" target="_blank">
+							<span class="serv__item-arrow" data-speed="77">
+								<img src="img/arrow.svg" alt="">
+							</span>
+							<div class="serv__item-txt">
+									<span class="serv__item-text">Fale com um advogado</span>
+									<i class='bx bxl-whatsapp'></i>
+							</div>
+							</a>
+						</div>
+						<div class="serv__item">
+								<span class="serv__item-arrow" data-speed="100">
+									<img src="img/arrow.svg" alt="">
+								</span>
+							</a>
+							<div class="serv__item-txt">
+								<a href="blog_geral.html"><span class="serv__item-text">BLOG</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="container_contact">
+				<div class="header_contact">
+					<h1>Fale com nosso time de Advogados</h1>
+					<p>Conte com a experiência de vivenciar uma forma humanizada de advogar.</p>
+				</div>
+				<div class="content_contact">
+					<div class="contact-info">
+						<h2>Porto Alegre</h2>
+						<p>Av. Senador Tarso Dutra, n. 161A, conjunto 708 | Bairro Petrópolis</p>
+		
+						<h2>São Leopoldo</h2>
+						<p>Rua São Joaquim 1299, sala 801 Bairro Centro | Centro Comercial São Leopoldo</p>
+		
+						<h2>Canela</h2>
+						<p>Rua Dona Carlinda, 482, sala 2 Bairro Centro</p>
+		
+						<p><strong>Email:</strong> consultoria@carraroadv.com</p>
+						<p><strong>Telefone:</strong> (51) 3907 8746 | 98122 1365</p>
+						<p><strong>WhatsApp:</strong> (51) 99438 2794 | 98122 1365 | 99622 1365</p>
+					</div>
+					<div class="form">
+						<input type="text" placeholder="Nome" required>
+						<input type="email" placeholder="Email" required>
+						<input type="text" placeholder="WhatsApp" required>
+						<textarea placeholder="Como podemos lhe auxiliar?" rows="5" required></textarea>
+						<a href="https://wa.me/5524998558044?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20falar%20com%20um%20advogado%20de%20fam%C3%ADlia!" target="_blank"><button class="button button1 button_contact">Falar com um Advogado!</button></a>
+					</div>
+				</div>
+			</div>
+			<section class="footer_blog_section" id="footer_blog_section_index">
+				<div class="logo-container">
+					<img src="https://www.advcarraro.com.br/wp-content/uploads/2024/08/Logo-Top-e1723023667984-768x229.png" alt="Lisiana Carraro Logo" class="logo_footer_blog">
+				  </div>
+				<div class="container_social">
+					<div class="social-button">
+						<a href="https://www.instagram.com/dralisianacarraro_advogada/" class="link_footer"><i class='bx bxl-instagram'></i>@carraroadvocacia</a>
+					</div>
+					<div class="social-button">
+						<a href="https://www.instagram.com/dralisianacarraro_advogada/" class="link_footer"><i class='bx bxl-instagram'></i> @dralisianacarraro_advogada</a>
+					</div>
+					<div class="social-button">
+						<a target="_blank" href="https://wa.me/5551989148525?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20desejo%20falar%20com%20um%20advogado%20de%20fam%C3%ADlia!" target="_blank" class="link_footer" rel="noreferrer noopener"><i class='bx bxl-whatsapp'></i> Entre em Contato</a>
+					</div>
+				</div>
+				</div>
+			</section>
+		</main>
+	
+
+		<!-- div .footer -->
+		<footer class="footer">
+			<div class="footer__div">
+				<span data-speed="-300">g</span>
+				<span data-speed="100">a</span>
+				<span data-speed="300">b</span>
+				<span data-speed="-300">r</span>
+				<span data-speed="350">i</span>
+				<span data-speed="200">e</span>
+				<span data-speed="-310">l</span>
+				<span data-speed="200">-</span>
+				<span data-speed="-340">c</span>
+				<span data-speed="-100">o</span>
+				<span data-speed="300">d</span>
+				<span data-speed="-300">e</span>
+			</div>
+		</footer>
+	</div>
+	<!-- /div .wrapp END -->
+	<script src="js/splitting.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+	<script src="js/luxy.js"></script>
+	<script src="js/js.js"></script>
+
+	<!-- swiper js -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- 
+endereço da imagem :
+https://files.oaiusercontent.com/file-ETWTUkHkHkaA9Ck5LZLWWV?se=2024-12-23T21%3A27%3A31Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dff613675-5b74-4f0f-9d90-b64853ff31a5.webp&sig=%2BxUVtL3Q5M2KrwMeBWfkbNY7kl7HIvGAc7GP2YmZMJQ%3D -->
